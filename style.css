@@ -64,6 +64,19 @@ button {
   cursor: pointer;
   color: white;
 }
+button:hover{
+  background: linear-gradient(
+    45deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border: 1px solid rgba(145, 0, 248, 1);
+  
+}
 .banner {
   background-color: #1a0b2e4f;
   color: #fafafa;
@@ -88,9 +101,7 @@ button {
 .banner .banner-image {
   width: auto;
 }
-.banner .banner-image .main {
-  /* width: 100%; */
-}
+
 .banner .banner-image h4 {
   background-color: #00ff88;
   color: black;
