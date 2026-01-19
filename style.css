@@ -85,10 +85,10 @@ button {
   top: 20%;
   left: 46%;
 }
-.banner .banner-image{
+.banner .banner-image {
   width: auto;
 }
-.banner .banner-image .main{
+.banner .banner-image .main {
   /* width: 100%; */
 }
 .banner .banner-image h4 {
@@ -362,7 +362,8 @@ button {
   width: 38px;
   padding: 8px;
   border: 1px solid #533c72;
-  /* border-radius: 50%; */
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* Footer  */
@@ -418,12 +419,11 @@ footer .copyright {
     top: 14%;
     width: 12%;
   }
-  .banner .banner-image .main{
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-
-}
+  .banner .banner-image .main {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
   .banner .banner-image h4 {
     top: 5%;
     left: 57%;
@@ -524,9 +524,18 @@ footer .copyright {
     padding-bottom: 68px;
   }
   .host-text p {
-   max-width: 250px;
-}
-.banner:hover h4 {
-  transform: translateX(-150px);
-}
+    max-width: 250px;
+  }
+  .banner:hover h4 {
+    transform: translateX(-150px);
+  }
+  .banner-text h2 {
+    font-size: 2.5rem;
+  }
+  .feature h2 {
+    font-size: 2.5rem;
+  }
+  .feature h2 {
+    font-size: 2.5rem;
+  }
 }
