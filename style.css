@@ -64,15 +64,76 @@ button {
   cursor: pointer;
   color: white;
 }
+.banner {
+  background-color: #1a0b2e4f;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 37px 0;
+  background-image: url(./assets/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner .image {
+  position: absolute;
+  top: 20%;
+  left: 46%;
+}
+.banner .banner-image h4 {
+  background-color: #00ff88;
+  color: black;
+  width: 75px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 0 9px 9px #00ff8877;
+  position: absolute;
+  top: 11%;
+  left: 56%;
+  transition: transform 4s ease;
+}
+.banner:hover h4 {
+  transform: translateX(-255px);
+}
+
+.banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.banner-text h2 {
+  font-size: 3.75rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.banner-text p {
+  font-weight: 100;
+  margin-bottom: 24px;
+}
+.banner-text .different-btn {
+  color: #00ff88;
+  background: none;
+  border: 1px solid #00ff88;
+  margin-left: 10px;
+}
+/* podcast  */
 .podcast {
   background-color: #1a0b2e;
   color: white;
-  padding-bottom: 120px;
+  padding-bottom: 74px;
 }
 .podcast .podcast-text {
   width: 75%;
   max-width: 1200px;
-  padding: 120px 0 0 0;
+  padding: 35px 0 0 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -88,8 +149,8 @@ button {
   font-weight: 100;
 }
 .podcast-text .last {
-  margin-top: 30px;
-  margin-bottom: 80px;
+  margin-top: 22px;
+  margin-bottom: 60px;
 }
 .podcast-text .line {
   border: none;
@@ -99,7 +160,7 @@ button {
 .podcast .podcast-rating {
   width: 75%;
   max-width: 1200px;
-  padding: 120px 0 0 0;
+  padding: 70px 0 0 0;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -116,15 +177,16 @@ button {
   text-transform: uppercase;
   font-weight: 100;
 }
-.why{
-  background-color: #230E3D;
+.why {
+  background-color: #230e3d;
 }
-.why h2{
+.why h2 {
   font-size: 2.5rem;
-  padding-top: 120px;
+  padding-top: 62px;
   padding-bottom: 40px;
 }
-.why .why-content , .why-main{
+.why .why-content,
+.why-main {
   width: 75%;
   max-width: 1200px;
   padding: 0px 0 0 0;
@@ -132,64 +194,69 @@ button {
   text-align: center;
   color: #fafafa;
 }
-.why .why-main .audio , .mobile , .global , .exclusive , .resarch {
- color: #fafafa;
- padding: 40px;
- background-color: rgba(53, 17, 101, 0.4);
- border-radius: 30px;
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- justify-content: center;
-
+.why .why-main .audio,
+.mobile,
+.global,
+.exclusive,
+.resarch {
+  color: #fafafa;
+  padding: 40px;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transition: all 0.3s ease-in;
 }
-.why .why-main img{
+.why .why-main .card:hover {
+  box-shadow: 0 0 10px 5px #000000;
+}
+
+.why .why-main img {
   margin-bottom: 16px;
   width: 40px;
 }
-.why .why-main h4{
+.why .why-main h4 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 16px;
 }
-.why .why-main p{
+.why .why-main p {
   font-weight: 100;
   line-height: 24px;
   text-align: left;
 }
-.why .why-main{
+.why .why-main {
   display: grid;
-  grid-template-areas: 
-  "audio mobile mobile"
-  "audio global global"
-  "exclusive exclusive resarch"
-  ;
+  grid-template-areas:
+    'audio mobile mobile'
+    'audio global global'
+    'exclusive exclusive resarch';
   gap: 30px;
   justify-content: center;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
-.why .why-main .audio{
+.why .why-main .audio {
   grid-area: audio;
 }
-.why .why-main .mobile{
+.why .why-main .mobile {
   grid-area: mobile;
 }
-.why .why-main .global{
+.why .why-main .global {
   grid-area: global;
 }
-.why .why-main .exclusive{
+.why .why-main .exclusive {
   grid-area: exclusive;
 }
-.why .why-main .resarch{
+.why .why-main .resarch {
   grid-area: resarch;
 }
-
 
 /* feature */
 .feature {
   background-color: #1a0b2e;
   color: white;
-  padding-bottom: 120px;
 }
 .feature h2 {
   text-align: center;
@@ -200,13 +267,17 @@ button {
 .feature .feature-episode {
   width: 75%;
   max-width: 1200px;
-  padding: 120px 0 0 0;
+  padding: 70px 0 0 0;
   margin: 0 auto;
 }
 .feature .feature-episode .card {
   max-width: 380px;
-  background-color: #110324;
+  background-color: rgba(53, 17, 101, 0.4);
   border-radius: 20px;
+  transition: all 0.3s ease-in;
+}
+.feature .feature-episode .card:hover {
+  box-shadow: 0 0 10px 5px #000000;
 }
 .feature .feature-episode .card iframe {
   width: 100%;
@@ -243,7 +314,7 @@ button {
 .feature .host {
   width: 75%;
   max-width: 1200px;
-  padding: 120px 0;
+  padding: 90px 0;
   margin: 0 auto;
 }
 .feature .host .host-main {
@@ -251,9 +322,13 @@ button {
   gap: 24px;
   align-items: center;
   justify-content: center;
-  background-color: #110324;
+  background-color: rgba(53, 17, 101, 0.4);
   padding: 48px 40px;
   border-radius: 25px;
+  transition: all 0.3s ease-in;
+}
+.feature .host .host-main:hover {
+  box-shadow: 0 0 10px 5px #000000;
 }
 .feature .host .host-text {
   display: flex;
@@ -261,7 +336,6 @@ button {
   gap: 24px;
   align-items: flex-start;
   justify-content: center;
-  background-color: #110324;
   padding: 48px 40px;
   border-radius: 25px;
 }
@@ -296,7 +370,7 @@ footer {
   background-image: url(./assets/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px 0;
+  padding: 80px 0;
   background-position: center;
   color: white;
 }
@@ -327,6 +401,20 @@ footer .copyright {
 }
 
 @media screen and (max-width: 576px) {
+  header {
+    padding: 15px 0;
+  }
+  .banner {
+    padding: 25px 0;
+  }
+  .banner .image {
+    left: 40%;
+    top: 18%;
+  }
+  .banner .banner-image h4 {
+    top: 5%;
+    left: 57%;
+  }
   header .page {
     display: none;
   }
@@ -348,11 +436,16 @@ footer .copyright {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+  .feature {
+    padding-bottom: 71px;
+  }
   .feature-episode .main {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
   }
   .feature .host {
     width: 75%;
@@ -364,13 +457,16 @@ footer .copyright {
     flex-direction: column;
     text-align: center;
   }
+
   .feature .host .host-text {
-    padding: 20px 20px;
+    align-items: center;
+
+    padding: 20px;
   }
   .feature .feature-episode {
     width: 75%;
     max-width: 1200px;
-    padding: 70px 0 0 0;
+    padding: 45px 0 0 0;
     margin: 0 auto;
   }
   .host-text h3 {
@@ -393,17 +489,25 @@ footer .copyright {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-  
-.why .why-main {
+  .podcast {
+    padding-bottom: 64px;
+  }
+  .podcast .podcast-text {
+    padding: 30px 0 0 0;
+  }
+  .why h2 {
+    padding-top: 52px;
+  }
+  .why .why-main {
     display: grid;
     grid-template-areas:
-        "audio "
-        "mobile"
-        "global"
-        "exclusive"
-        "resarch";
+      'audio '
+      'mobile'
+      'global'
+      'exclusive'
+      'resarch';
     gap: 30px;
     justify-content: center;
-    padding-bottom: 120px;
-}
+    padding-bottom: 68px;
+  }
 }
