@@ -64,6 +64,59 @@ button {
   cursor: pointer;
   color: white;
 }
+.podcast {
+  background-color: #1a0b2e;
+  color: white;
+  padding-bottom: 120px;
+}
+.podcast .podcast-text {
+  width: 75%;
+  max-width: 1200px;
+  padding: 120px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.podcast-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.podcast-text p {
+  font-size: 1rem;
+  line-height: 34px;
+  color: #fafafa;
+  font-weight: 100;
+}
+.podcast-text .last {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.podcast-text .line {
+  border: none;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.669);
+}
+.podcast .podcast-rating {
+  width: 75%;
+  max-width: 1200px;
+  padding: 120px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.podcast-rating h2 {
+  font-size: 2.5rem;
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+.podcast-rating p {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+/* feature */
 .feature {
   background-color: #1a0b2e;
   color: white;
@@ -241,7 +294,6 @@ footer .copyright {
   .feature .host .host-main {
     flex-direction: column;
     text-align: center;
-    
   }
   .feature .host .host-text {
     padding: 20px 20px;
@@ -254,6 +306,22 @@ footer .copyright {
   }
   .host-text h3 {
     font-size: 2rem;
-    text-align:center;
+    text-align: center;
+  }
+  .podcast-text h2 {
+    font-size: 2rem;
+  }
+  .podcast-text p {
+    line-height: 22px;
+  }
+  .podcast-text .last {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .podcast .podcast-rating {
+    padding: 40px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
 }
