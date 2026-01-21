@@ -64,7 +64,7 @@ button {
   cursor: pointer;
   color: white;
 }
-button:hover{
+button:hover {
   background: linear-gradient(
     45deg,
     rgba(247, 233, 63, 1),
@@ -75,7 +75,6 @@ button:hover{
   background-clip: text;
   color: transparent;
   border: 1px solid rgba(145, 0, 248, 1);
-  
 }
 .banner {
   background-color: #1a0b2e4f;
@@ -97,6 +96,10 @@ button:hover{
   position: absolute;
   top: 20%;
   left: 46%;
+  transition: all 1500s ease;
+}
+.banner:hover .image {
+  transform: rotate(360000deg);
 }
 .banner .banner-image {
   width: auto;
@@ -110,7 +113,7 @@ button:hover{
   font-weight: 500;
   padding: 8px 16px;
   border-radius: 20px;
-  box-shadow: 0 0 9px 9px #00ff8877;
+  box-shadow: 0 0 5px 5px #00ff8877;
   position: absolute;
   top: 11%;
   left: 56%;
@@ -453,6 +456,9 @@ footer .copyright {
   }
   footer {
     padding: 40px 0;
+  }
+  footer .logo {
+    font-size: 25px;
   }
 
   footer .icon {
